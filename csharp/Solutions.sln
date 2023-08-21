@@ -7,9 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F20A8F1D-805
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CD501271-56EB-4579-9F9D-A8F57106D3E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solutions.Lib", "src\Solutions.Lib\Solutions.Lib.csproj", "{CF829991-B721-4577-8B22-2B4E699DC293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solutions.Lib", "src\Solutions.Lib\Solutions.Lib.csproj", "{CF829991-B721-4577-8B22-2B4E699DC293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solutions.Tests", "tests\Solutions.Tests\Solutions.Tests.csproj", "{4FDE29CA-C540-46DB-895D-D1BB0AEB32E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solutions.Tests", "tests\Solutions.Tests\Solutions.Tests.csproj", "{4FDE29CA-C540-46DB-895D-D1BB0AEB32E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{640D76A1-20A1-47C9-85BA-CE39E793A34E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
