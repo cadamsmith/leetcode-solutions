@@ -21,7 +21,7 @@ public abstract class TwoSumSolutionTests<TSolution> : BaseSolutionTests<TSoluti
 
 		// Assert
 		int[] expected = new int[] { 0, 1 };
-		Assert.True(TwoSumSolutionTests<TSolution>.IsEqualWhenSorted(result, expected));
+		Assert.True(ArrayUtility.IsEqualWhenSorted(result, expected));
 	}
 
 	[Fact]
@@ -37,7 +37,7 @@ public abstract class TwoSumSolutionTests<TSolution> : BaseSolutionTests<TSoluti
 
 		// Assert
 		int[] expected = new int[] { 1, 2 };
-		Assert.True(TwoSumSolutionTests<TSolution>.IsEqualWhenSorted(result, expected));
+		Assert.True(ArrayUtility.IsEqualWhenSorted(result, expected));
 	}
 
 	[Fact]
@@ -53,7 +53,7 @@ public abstract class TwoSumSolutionTests<TSolution> : BaseSolutionTests<TSoluti
 
 		// Assert
 		int[] expected = new int[] { 0, 1 };
-		Assert.True(TwoSumSolutionTests<TSolution>.IsEqualWhenSorted(result, expected));
+		Assert.True(ArrayUtility.IsEqualWhenSorted(result, expected));
 	}
 
 	[Fact]
@@ -69,14 +69,6 @@ public abstract class TwoSumSolutionTests<TSolution> : BaseSolutionTests<TSoluti
 
 		// Assert
 		int[] expected = new int[] { 1, 2 };
-		Assert.True(TwoSumSolutionTests<TSolution>.IsEqualWhenSorted(result, expected));
-	}
-
-	static bool IsEqualWhenSorted(int[] nums1, int[] nums2)
-	{
-		Array.Sort(nums1);
-		Array.Sort(nums2);
-
-		return nums1.SequenceEqual(nums2);
+		Assert.True(ArrayUtility.IsEqualWhenSorted(result, expected));
 	}
 }
