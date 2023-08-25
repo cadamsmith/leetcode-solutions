@@ -1,7 +1,12 @@
 ﻿namespace Solutions.Lib;
 
+/// <summary>
+/// Brute Force Solution
+/// </summary>
 public class TwoSumSolutionA : TwoSumSolution
 {
+	// Time Complexity: O( N^2 )
+	// Space Complexity: O( N )
     protected override int[] TwoSum(int[] nums, int target)
     {
         int count = nums.Length;

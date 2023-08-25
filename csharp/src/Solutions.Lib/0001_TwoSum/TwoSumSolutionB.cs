@@ -1,22 +1,46 @@
 ﻿namespace Solutions.Lib;
 
+/// <summary>
+/// A messy Two-pass Hash Table solution
+/// </summary>
 public class TwoSumSolutionB : TwoSumSolution
 {
-    protected override int[] TwoSum(int[] nums, int target)
+	// Time Complexity: O( N )
+	// Space Complexity: O( N )
+	protected override int[] TwoSum(int[] nums, int target)
     {
-        int count = nums.Length;
+		int count = nums.Length;
+		Dictionary<int, int> complementMap = new();
 
-        for (int i = 0; i < count - 2; i++)
-        {
-            for (int j = i + 1; j < count; j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    return new int[] { i, j };
-                }
-            }
-        }
+		// find all the complements, and point them to their
+		// corresponding numbers
+		for (int i = 0; i < count; i++)
+		{
+			int num = nums[i];
+			int complement = target - num;
 
-        return new int[] { count - 2, count - 1 };
-    }
+			complementMap[complement] = i;
+		}
+
+		// this time, we'll search for a num that is one of the
+		// complements from earlier
+		for (int i = 0; i < count; i++)
+		{
+			int num = nums[i];
+
+			if (complementMap.ContainsKey(num))
+			{
+				int complementIndex = complementMap[num];
+
+				if (complementIndex == i)
+				{
+					continue;
+				}
+
+				return new int[] { complementIndex, i };
+			}
+		}
+
+		return new int[] { count - 2, count - 1 };
+	}
 }
