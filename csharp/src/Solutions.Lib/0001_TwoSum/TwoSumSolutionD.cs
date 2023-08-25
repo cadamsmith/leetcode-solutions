@@ -27,7 +27,6 @@ public class TwoSumSolutionD : TwoSumSolution
 			map[num] = i;
 		}
 
-		// this line should not be reached
-		return Array.Empty<int>();
+		throw new ArgumentException("No solution found.");
 	}
 }
