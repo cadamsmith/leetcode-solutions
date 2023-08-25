@@ -1,6 +1,6 @@
 ﻿namespace Solutions.Lib;
 
-public abstract class TwoSumSolution : BaseSolution
+public abstract class BaseTwoSumSolution : BaseSolution
 {
     protected override int[] Solve(object[] parameters)
     {

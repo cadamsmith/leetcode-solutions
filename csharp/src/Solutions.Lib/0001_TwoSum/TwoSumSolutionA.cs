@@ -3,7 +3,7 @@
 /// <summary>
 /// Brute Force Solution
 /// </summary>
-public class TwoSumSolutionA : TwoSumSolution
+public class TwoSumSolutionA : BaseTwoSumSolution
 {
 	// Time Complexity: O( N^2 )
 	// Space Complexity: O( N )

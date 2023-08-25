@@ -2,10 +2,10 @@
 
 namespace Solutions.Tests;
 
-public abstract class TwoSumSolutionTests<TSolution> : BaseSolutionTests<TSolution>
-    where TSolution : TwoSumSolution
+public abstract class BaseTwoSumSolutionTests<TSolution> : BaseSolutionTests<TSolution>
+    where TSolution : BaseTwoSumSolution
 {
-    public TwoSumSolutionTests(BaseSolutionFixture fixture)
+    public BaseTwoSumSolutionTests(BaseSolutionFixture fixture)
         : base(fixture) { }
 
 	[Fact]

@@ -3,7 +3,7 @@
 /// <summary>
 /// A messy Two-pass Hash Table solution
 /// </summary>
-public class TwoSumSolutionB : TwoSumSolution
+public class TwoSumSolutionB : BaseTwoSumSolution
 {
 	// Time Complexity: O( N )
 	// Space Complexity: O( N )

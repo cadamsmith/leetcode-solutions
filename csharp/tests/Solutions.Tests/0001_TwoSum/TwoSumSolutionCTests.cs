@@ -2,7 +2,7 @@
 
 namespace Solutions.Tests;
 
-public class TwoSumSolutionCTests : TwoSumSolutionTests<TwoSumSolutionB>
+public class TwoSumSolutionCTests : BaseTwoSumSolutionTests<TwoSumSolutionB>
 {
 	public TwoSumSolutionCTests(BaseSolutionFixture fixture)
 		: base(fixture) { }
