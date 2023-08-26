@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Solutions.AdHocTests": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
