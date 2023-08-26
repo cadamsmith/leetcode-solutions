@@ -1,7 +1,8 @@
 ﻿namespace Solutions.Lib;
 
 /// <summary>
-/// 
+/// Represents a sliding window containing the
+/// characters in a nonrepeating substring
 /// </summary>
 public class SlidingWindow
 {
