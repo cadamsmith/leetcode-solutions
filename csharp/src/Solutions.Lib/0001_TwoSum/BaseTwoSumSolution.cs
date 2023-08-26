@@ -2,7 +2,7 @@
 
 public abstract class BaseTwoSumSolution : BaseSolution
 {
-    protected override int[] Solve(object[] parameters)
+    protected override object Solve(object[] parameters)
     {
         int[] nums = (int[]) parameters[0];
         int target = (int) parameters[1];
