@@ -16,7 +16,7 @@ public class Solution0014A : Solution0014
 
         // only need to look at two words
         string l = strs[0];
-        string r = strs[strs.Length - 1];
+        string r = strs[^1];
 
         // the longest prefix length possible
         int maxLength = Math.Min(l.Length, r.Length);

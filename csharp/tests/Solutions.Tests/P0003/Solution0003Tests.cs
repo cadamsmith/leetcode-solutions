@@ -2,11 +2,10 @@
 
 namespace Solutions.Tests.P0003;
 
-public abstract class BaseLongestNonRepeatingSubstringSolutionTests<TSolution>
+public abstract class Solution0003Tests<TSolution>
 	: BaseSolutionTests<TSolution> where TSolution : Solution0003
 {
-	public BaseLongestNonRepeatingSubstringSolutionTests(BaseSolutionFixture fixture)
-		: base(fixture) { }
+	public Solution0003Tests(BaseSolutionFixture fixture) : base(fixture) { }
 
 	[Fact]
 	public void BaseTestCase_1()

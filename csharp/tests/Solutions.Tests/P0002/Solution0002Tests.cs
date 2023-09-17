@@ -5,8 +5,7 @@ namespace Solutions.Tests.P0002;
 public abstract class Solution0002Tests<TSolution> : BaseSolutionTests<TSolution>
 	where TSolution : Solution0002
 {
-	public Solution0002Tests(BaseSolutionFixture fixture)
-		: base(fixture) { }
+	public Solution0002Tests(BaseSolutionFixture fixture) : base(fixture) { }
 
 	[Fact]
 	public void BaseTestCase_1()

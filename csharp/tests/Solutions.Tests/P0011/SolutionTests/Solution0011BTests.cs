@@ -2,9 +2,7 @@
 
 namespace Solutions.Tests.P0011;
 
-public class IntegerToRomanSolutionTestsB
-	: Solution0011Tests<Solution0011B>
+public class Solution0011BTests : Solution0011Tests<Solution0011B>
 {
-	public IntegerToRomanSolutionTestsB(BaseSolutionFixture fixture)
-		: base(fixture) { }
+	public Solution0011BTests(BaseSolutionFixture fixture) : base(fixture) { }
 }
